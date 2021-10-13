@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="#########################" />
+    <title>Bookers</title>
+  </head>
+  <body>
+      <h2>Title</h2>
+      <p><%= @book.title %></p>
+      <h2>Body</h2>
+      <p><%= @book.body %></p>
+      
+      <%= link_to "Edit", "/books/#{@book.id}/edit" %>
+      <%= link_to "Back", "/books" %>
+      <%= link_to "Destroy", "/books/#{@book.id}", method: :delete, "data-confirm" => "Are you sure?" %>
+      <!--, data-confirm => "Are you sure?"-->
+  </body>
