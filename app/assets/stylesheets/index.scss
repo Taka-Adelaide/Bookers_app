@@ -1,0 +1,19 @@
+table {
+  width: 80%;
+}
+
+td:nth-child(1) {
+  width: 25%;
+}
+td:nth-child(2) {
+  width: 50%;
+}
+
+td:nth-child(n+3) {
+  display: inline-block;
+  padding-right: 8px;
+}
+
+td:last-child {
+  padding-right: 0;
+}
